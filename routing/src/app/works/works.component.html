@@ -1,0 +1,7 @@
+<p>Works</p>
+
+<div *ngFor="let work of works | async">
+    <a [routerLink]="['/works', work.id]" >{{ work.title }}</a>
+</div>
+
+<router-outlet></router-outlet>

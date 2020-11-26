@@ -1,0 +1,5 @@
+<div *ngIf="work | async as work">
+    <img [src]='work.image' [alt]='work.title'>
+    <h3>История создания</h3>
+    <div>{{ work.body }}</div>
+</div>

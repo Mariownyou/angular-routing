@@ -1,0 +1,6 @@
+<p>dates works!</p>
+
+<div *ngFor="let date of dates | async">
+    <a routerLinkActive='active' [routerLink]="['/dates', date.year]" >{{ date.year }}</a>
+</div>
+<router-outlet></router-outlet>
